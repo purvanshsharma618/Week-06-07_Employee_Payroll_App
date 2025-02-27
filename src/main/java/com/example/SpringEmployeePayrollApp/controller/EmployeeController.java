@@ -57,4 +57,16 @@ public class EmployeeController {
     public List<Employee> fetchAllEmployees() {
         return employeeService.fetchAllEmployees();
     }
+
+    // Sec2 UC3
+    @GetMapping("/memory")
+    public List<Employee> getAllEmployeesFromMemory() {
+        return employeeService.getAllEmployeesFromMemory();
+    }
+
+    @GetMapping("/memory/{id}")
+    public Optional<Employee> getEmployeeByIdFromMemory(@PathVariable Long id) {
+        return employeeService.getEmployeeByIdFromMemory(id);
+    }
+
 }
