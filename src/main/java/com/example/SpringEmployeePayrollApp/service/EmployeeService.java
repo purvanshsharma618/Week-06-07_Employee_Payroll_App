@@ -53,6 +53,10 @@ public class EmployeeService {
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
+    //Sec2 UC2
+    public List<Employee> fetchAllEmployees() {
+        return employeeRepository.findAll();
+    }
 
 
 }
